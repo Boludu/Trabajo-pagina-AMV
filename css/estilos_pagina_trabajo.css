@@ -95,3 +95,12 @@ aside:hover ul li a {
     opacity: 1;
     color: black;
 }
+
+p {
+    color: rgb(255, 191, 0);
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: justify;
+}

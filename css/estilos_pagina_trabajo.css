@@ -40,63 +40,29 @@ header h1 {
     color: rgb(100, 100, 100);
     margin: 0;
 }
-aside {
-    width: 160px;
-    height: 20px;
-    padding: 20px;
-    margin: 20px;
-    overflow: hidden;
-    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s;
-}
-
-aside:hover {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(255, 191, 0);
-}
-
-aside h2 {
+.categorias {
     color: rgb(100, 100, 100);
-    margin-top: 0;
-    white-space: nowrap;
-    opacity: 1;
-    transition: opacity 0.3s;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block; /* importante para que tenga tamaño tipo botón */
+    cursor: pointer; /* para que parezca clicable */
 }
 
-aside ul {
-    list-style: none;
+.submenu {
+    display: none;        /* 🔴 IMPORTANTE: oculto por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
     padding: 0;
 }
 
-aside ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+.dropdown:hover .submenu {
     display: block;
-    padding: 10px 0;
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.3s;
 }
 
-aside ul li a:hover {
-    color: rgb(3, 3, 3);
-    text-decoration: underline;
-}
-aside:hover h2 {
-    color: rgb(0, 0, 0);
-}
-aside:hover ul li a {
-    opacity: 1;
-    color: rgb(100, 100, 100);
-}
-
-p {
-    color: rgb(255, 191, 0);
-    font-size: 18px;
-    line-height: 1.5;
-    padding: 20px;
-    margin: 10px 0;
-    text-align: justify;
+.dropdown {
+    position: relative;
 }
 img {
    width: 200px;

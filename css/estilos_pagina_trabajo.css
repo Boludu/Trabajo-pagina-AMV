@@ -98,3 +98,7 @@ p {
     margin: 10px 0;
     text-align: justify;
 }
+img {
+   width: 200px;
+   height: 200px;
+}

@@ -44,12 +44,12 @@ header h1 {
     color: rgb(100, 100, 100);
     font-weight: bold;
     padding: 10px 20px;
-    display: block; /* importante para que tenga tamaño tipo botón */
-    cursor: pointer; /* para que parezca clicable */
+    display: block;
+    cursor: pointer;
 }
 
 .submenu {
-    display: none;        /* 🔴 IMPORTANTE: oculto por defecto */
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;

@@ -26,20 +26,19 @@ let fotos = [
 
 render();
 
-
 function render() {
     const galeria = document.getElementById("galeria");
-    galeria.innerHTML = ""; // Limpiar la galería antes de renderizar
+    galeria.innerHTML = "";
+
     fotos.forEach(foto => {
         const img = document.createElement("img");
         img.src = foto.url;
+        img.alt = "foto";
+
+        img.style.width = "200px";
+
         galeria.appendChild(img);
     });
-}
-
-function filtrar(categoria) {
-    const fotos = fotos.filter(foto => foto.categorias.includes(categoria));
-    render();
 }
 
 

@@ -63,7 +63,6 @@ function render() {
         const img = document.createElement("img");
         img.src = foto.url;
         img.alt = "foto";
-        img.style.width = "200px";
         galeria.appendChild(img);
     });
 }
